@@ -1,0 +1,725 @@
+<html lang="es">
+	<head>
+		<title>Know Your Carbon Footprint</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+		<meta charset="UTF-8">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.8d98e346.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.f5148f14.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.902bdfaf.png">
+		<link rel="mask-icon" href="/safari-pinned-tab.7ad6a0c0.svg" color="#007F00">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- 		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet"> -->
+
+
+		<meta name="msapplication-TileColor" content="#007F00">
+		<meta name="theme-color" content="#007F00">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+		// Load google charts
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		// Draw the chart and set the chart values
+		function drawChart() {
+		  var data = google.visualization.arrayToDataTable([
+		  ['Task', 'Hours per Day'],
+		  ['Energia Hogar', 4],
+		  ['Comida', 43],
+		  ['Trasporte', 1],
+		  ['Viajes Aereos', 9],
+		  ['Vienes y servicios', 34]
+		]);
+
+		  // Optional; add a title and set the width and height of the chart
+		  var options = {'title':'Emision [tcO2/año]', 'width':550, 'height':400};
+
+		  // Display the chart inside the <div> element with id="piechart"
+		  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		  chart.draw(data, options);
+		}
+		</script>
+		<style>
+		@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+		html, body, html  {
+		  font-family: 'Roboto bold', sans-serif !important;
+		  font-size: 16px !important;
+    	  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+		}
+			div {
+			    display: block;
+			}
+			* {
+			    box-sizing: border-box;
+			}
+			.caCdaG {
+			    position: fixed;
+			    top: 0px;
+			    left: 0px;
+			    width: 100vw;
+			    overflow-y: scroll;
+			    display: flex;
+			    flex-direction: column;
+			    -webkit-box-align: center;
+			    align-items: center;
+			    height: 100%;
+			    z-index: 100;
+			    min-width: 221px;
+			    overflow-x: hidden;
+			    opacity: 1;
+			    pointer-events: all;
+			    transition: opacity 0.4s ease-in-out 0s;
+			    background: white;
+			}
+			.iXFoEH {
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			    max-width: 57rem;
+			    padding: 2.5rem 2rem 2rem;
+			}
+			.hKkDwW {
+			    height: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    -webkit-box-pack: center;
+			    justify-content: center;
+			    -webkit-box-align: center;
+			    align-items: center;
+			    text-align: center;
+			    overflow-x: hidden;
+			}
+			h1 {
+			    font-size: 48px;
+			    font-weight: 300;
+			    line-height: 64px;
+			    border-bottom: solid 1px #d8d8d8;
+			    width: 100%;
+			    margin-bottom: 16px;
+			    color: #333333;
+			    margin-top: 32px;
+			}
+			.hKkDwW h3 {
+			    font-size: 1rem;
+			    color: rgb(68, 68, 68);
+			    line-height: 1.65;
+			    max-width: 38rem;
+			    padding: 2rem 0px;
+			    font-weight: 300;
+			    margin: 0px;
+			}
+			.btnes{
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background: #bad405;
+			    color: #333333;
+			    border-radius: 5px;
+			    height: 45px;
+			    width: 100px;
+			    font-size: 16px;
+			    line-height: 19px;
+			    text-align: center;
+			    text-decoration: none;
+			    border:none;
+			}
+			.btnes:hover {
+			    text-decoration: none;
+			    color: #333333;
+			    background: #adc200;
+			}
+			 *:focus {
+			      outline: 1px dashed #000000; 
+			      outline-offset: 2px; 
+			 }
+			 .form-control:focus {
+			 border-color: #333;
+		    outline: 0;
+		    -webkit-box-shadow: none;
+		      box-shadow: none;
+		    }
+		    .inputtext{
+		    	height: 45px;
+		    }
+		    .wizard {
+		        margin: 20px auto;
+		        background: #fff;
+		    }
+
+		        .wizard .nav-tabs {
+		            position: relative;
+		            margin: 40px auto;
+		            margin-bottom: 0;
+		            border-bottom-color: #e0e0e0;
+		        }
+
+		        .wizard > div.wizard-inner {
+		            position: relative;
+		        }
+
+		    .connecting-line {
+		        height: 2px;
+		        background: #e0e0e0;
+		        position: absolute;
+		        width: 80%;
+		        margin: 0 auto;
+		        left: 0;
+		        right: 0;
+		        top: 50%;
+		        z-index: 1;
+		    }
+
+		    .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+		        color: #555555;
+		        cursor: default;
+		        border: 0;
+		        border-bottom-color: transparent;
+		    }
+
+		    span.round-tab {
+		        width: 70px;
+		        height: 70px;
+		        line-height: 70px;
+		        display: inline-block;
+		        border-radius: 100px;
+		        background: #fff;
+		        border: 2px solid #e0e0e0;
+		        z-index: 2;
+		        position: absolute;
+		        left: 0;
+		        text-align: center;
+		        font-size: 25px;
+		    }
+		    span.round-tab i{
+		        color:#555555;
+		    }
+		    .wizard li.active span.round-tab {
+		        background: #fff;
+		        border: 2px solid #bad405;
+		        
+		    }
+		    .wizard li.active span.round-tab i{
+		        color: #bad405;
+		    }
+
+		    span.round-tab:hover {
+		        color: #333;
+		        border: 2px solid #333;
+		    }
+
+		    .wizard .nav-tabs > li {
+		        width: 20%;
+		    }
+
+		    .wizard li:after {
+		        content: " ";
+		        position: absolute;
+		        left: 46%;
+		        opacity: 0;
+		        margin: 0 auto;
+		        bottom: 0px;
+		        border: 5px solid transparent;
+		        border-bottom-color: #bad405;
+		        transition: 0.1s ease-in-out;
+		    }
+
+		    .wizard li.active:after {
+		        content: " ";
+		        position: absolute;
+		        left: 46%;
+		        opacity: 1;
+		        margin: 0 auto;
+		        bottom: 0px;
+		        border: 10px solid transparent;
+		        border-bottom-color: #bad405;
+		    }
+
+		    .wizard .nav-tabs > li a {
+		        width: 70px;
+		        height: 70px;
+		        margin: 20px auto;
+		        border-radius: 100%;
+		        padding: 0;
+		    }
+
+		        .wizard .nav-tabs > li a:hover {
+		            background: transparent;
+		        }
+
+		    .wizard .tab-pane {
+		        position: relative;
+		        padding-top: 50px;
+		    }
+
+		    .wizard h3 {
+		        margin-top: 0;
+		    }
+
+		    @media( max-width : 585px ) {
+
+		        .wizard {
+		            width: 90%;
+		            height: auto !important;
+		        }
+
+		        span.round-tab {
+		            font-size: 16px;
+		            width: 50px;
+		            height: 50px;
+		            line-height: 50px;
+		        }
+
+		        .wizard .nav-tabs > li a {
+		            width: 50px;
+		            height: 50px;
+		            line-height: 50px;
+		        }
+
+		        .wizard li.active:after {
+		            content: " ";
+		            position: absolute;
+		            left: 35%;
+		        }
+		    }
+
+		    .tab {
+		      display: none;
+		    }
+
+		    button {
+		      background-color: #4CAF50;
+		      color: #ffffff;
+		      border: none;
+		      padding: 10px 20px;
+		      font-size: 17px;
+		      font-family: Raleway;
+		      cursor: pointer;
+		    }
+
+		    button:hover {
+		      opacity: 0.8;
+		    }
+
+		    #prevBtn {
+		      background-color: #bbbbbb;
+		    }
+
+		    /* Make circles that indicate the steps of the form: */
+		    .step {
+		      height: 15px;
+		      width: 15px;
+		      margin: 0 2px;
+		      background-color: #bbbbbb;
+		      border: none;  
+		      border-radius: 50%;
+		      display: inline-block;
+		      opacity: 0.5;
+		    }
+
+		    .step.active {
+		      opacity: 1;
+		    }
+		    .mtop{
+		      margin-top:30px;
+		    }
+		    .input150{
+		      width:150px;
+		    }
+		    .hide{
+		    	display: none;
+		    }
+		</style>
+	</head>
+	<body> 
+		<div id="root" class="caCdaG"> 
+			<div class="iXFoEH">
+			<div id="piechart"></div>
+				<div class="hKkDwW " id="inicial">
+					<h3>
+						<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">El mundo necesita una energía más inteligente y más sostenible. </font>
+						<font style="vertical-align: inherit;">Cuando trabajamos juntos, pequeñas acciones pueden hacer una gran diferencia. </font>
+						<font style="vertical-align: inherit;">Use nuestra calculadora para averiguar cuánto carbono usa cada año, y dé el primer paso para reducir su huella.</font>
+						</font>
+					</h3>
+					<button class="btnes go_slide" data-godiv="#datauser" data-origendiv="#inicial">Empezar</button>
+				</div>
+				<div class=" hide" id="datauser">
+					<form   id="login-form">
+					 <div class="row">
+        				<div class="col-xs-6 form-group">
+						    <label for="exampleInputEmail1">Nombres</label>
+						    <input type="text" class="form-control inputtext"   id="exampleInputEmail1" placeholder="Nombres">
+						</div>
+						<div class="col-xs-6 form-group">
+						    <label for="exampleInputPassword1">Apellidos</label>
+						    <input type="text" class="form-control inputtext"    id="exampleInputPassword1" placeholder="Apellidos">
+					    </div>
+					  <button class=" btnes pull-right go_slide" data-godiv="#formwizard" data-origendiv="#datauser">Continuar</button>
+					 </div>
+					</form>
+				</div><!-- fin form inicial -->
+			</div>
+			<div class="container  hidex" id="formwizard" style="margin-top:50px">
+				<div class="row">
+					<section>
+			        <div class="wizard">
+			            <div class="wizard-inner">
+			                <div class="connecting-line"></div>
+			                <ul class="nav nav-tabs" role="tablist">
+
+			                    <li role="presentation" class="active">
+			                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+			                            <span class="round-tab">
+			                                <i class="fa fa-home" style="margin-top: 21px;"></i>
+			                            </span>
+			                        </a>
+			                    </li>
+
+			                    <li role="presentation" class="disabled">
+			                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+			                            <span class="round-tab">
+			                                <i class="fa fa-cutlery" style="margin-top: 21px;"></i>
+			                            </span>
+			                        </a>
+			                    </li>
+			                    <li role="presentation" class="disabled">
+			                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+			                            <span class="round-tab">
+			                                <i class="fa fa-taxi" style="margin-top: 21px;"></i>
+			                            </span>
+			                        </a>
+			                    </li>
+								<li role="presentation" class="disabled">
+								    <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+								        <span class="round-tab">
+								            <i class="fa fa-plane" style="margin-top: 21px;"></i>
+								        </span>
+								    </a>
+								</li>
+			                    <li role="presentation" class="disabled">
+			                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+			                            <span class="round-tab">
+			                                <i class="fa fa-laptop" style="margin-top: 21px;"></i>
+			                            </span>
+			                        </a>
+			                    </li>
+			                </ul>
+			            </div>
+
+			            <form role="form">
+			                <div class="tab-content">
+				                <div class="tab-pane mtop active" role="tabpanel" id="step1">
+				                    <h3>Energia Hogar</h3>
+				                    <font style="vertical-align: inherit;">
+			                        ¿Cuánta electricidad usa en su hogar por año?</font>
+                					 <div class="row mtop">
+                        				<div class="col-xs-6 form-group">
+                        					<div class="col-xs-12 form-group">
+	                						    <label for="conenergia">Consumo en Kw-h</label>
+	                						    <input type="number" min="0" class="form-control inputtext input150 calculaE" name="conenergia"  id="conenergia" placeholder="0 Kw-h">
+                						    </div>
+                						</div>
+                						<div class="col-xs-6 form-group">
+                							<div class="col-xs-12 form-group">
+	                						    <label for="npercasa">N&uacute;mero de personas</label>
+	                						    <input type="number" min="0" class="form-control inputtext input150 calculaE" name="npercasa" id="npercasa" placeholder="0">
+
+	                						    <input type="hidden" class="form-control inputtext input150" name="totemipri" id="totemipri" placeholder="0">
+    	                						<input type="text" class="form-control inputtext input150" name="totenergia" id="totenergia" placeholder="0">
+	                						</div>
+                					    </div>
+		                        	</div>
+				                    <ul class="list-inline pull-right">
+				                        <li><button type="button" class="btnes next-step">Siguiente</button></li>
+				                    </ul>
+				                </div>
+			                    <div class="tab-pane" role="tabpanel" id="step2">
+   				                    <h3>Comida</h3>
+   				                    <font style="vertical-align: inherit;">
+   			                        ¿Indique cuantos d&iacute;as a la semana consume la siguiente comida?</font>
+                   					 <div class="row mtop">
+                           				<div class="col-xs-6 form-group">
+                           					<div class="col-xs-12 form-group">
+   	                						    <label for="carne">Carne</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaCo" name="carne"  id="carne" placeholder="0">
+                   						    </div>
+                   						</div>
+                   						<div class="col-xs-6 form-group">
+                   							<div class="col-xs-12 form-group">
+   	                						    <label for="cerdo">Cerdo</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaCo" name="cerdo" id="cerdo" placeholder="0">
+   	                						</div>
+                   					    </div>
+                   					    <div class="col-xs-6 form-group">
+                           					<div class="col-xs-12 form-group">
+   	                						    <label for="pollo">Pollo</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaCo" name="pollo"  id="pollo" placeholder="0">
+                   						    </div>
+                   						</div>
+                   						<div class="col-xs-6 form-group">
+                   							<div class="col-xs-12 form-group">
+   	                						    <label for="vegetales">Vegetales</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaCo" name="vegetales" id="vegetales" placeholder="0">
+       	                						<input type="text" class="form-control inputtext input150" name="totcomida" id="totcomida" placeholder="0">
+   	                						</div>
+                   					    </div>
+   		                        	</div>
+			                        <ul class="list-inline pull-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+			                            <li><button type="button" class="btnes btn-info-full next-step">Siguiente</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane  mtop" role="tabpanel" id="step3">
+			                        <h3>Transporte</h3>
+			                         <font style="vertical-align: inherit;">
+			                        ¿Qué medios de transporte usa y cuántas horas por semana pasa por medio de transporte?</font>
+			                         <h3>P&uacute;blico</h3>
+	                					 <div class="row">
+	                        				<div class="col-xs-6 form-group">
+	                        					<div class="col-xs-12 form-group">
+		                						    <label for="ttrayectopu">Tiempo de viaje por trayecto -  en minutos</label>
+		                						    <input type="number" min="0" class="form-control inputtext input150 calculaT" name="ttrayectopu"  id="ttrayectopu" placeholder="0 min">
+	                						    </div>
+	                						</div>
+	                						<div class="col-xs-6 form-group">
+	                							<div class="col-xs-12 form-group">
+		                						    <label for="nviajespu">N&uacute;mero de viajes semanales</label>
+		                						    <input type="number" min="0" class="form-control inputtext input150 calculaT" name="nviajespu" id="nviajespu" placeholder="0">
+		                						</div>
+	                					    </div>
+			                        	</div>
+			                        	<h3>Particular</h3>
+	                					 <div class="row">
+	                        				<div class="col-xs-6 form-group">
+	                        					<div class="col-xs-12 form-group">
+			                        				<div class="col-xs-12 form-group">
+				                						    <label for="ttrayectopri">Tiempo de viaje por trayecto -  en minutos</label>
+				                						    <input type="number" min="0" class="form-control inputtext input150 calculaTpr" name="ttrayectopri"  id="ttrayectopri" placeholder="0 min">
+			                						</div>
+			                					</div>
+		                						<div class="col-xs-12 form-group">
+		                							<div class="col-xs-12 form-group">
+			                						    <label for="nviajespri">N&uacute;mero de viajes semanales</label>
+			                						    <input type="number" min="0" class="form-control inputtext input150 calculaTpr" name="nviajespri" id="nviajespri" placeholder="0">
+			                						</div>
+		                					    </div>
+	                					  </div>
+                    						<div class="col-xs-6 form-group">
+                    							<div class="col-xs-12 form-group">
+    	                						    <label for="nper">N&uacute;mero de personas</label>
+    	                						    <input type="number" min="1" class="form-control inputtext input150 calculaTpr" name="nper" id="nper" placeholder="1" value="1">
+    	                						    <input type="hidden" class="form-control inputtext input150" name="nviajes" id="nviajes" placeholder="0">
+    	                						    <input type="hidden" class="form-control inputtext input150" name="totminvpub" id="totminvpub" placeholder="0">
+    	                						    <input type="hidden" class="form-control inputtext input150" name="totemipub" id="totemipub" placeholder="0">
+
+    	                						    <input type="hidden" class="form-control inputtext input150" name="totminvpri" id="totminvpri" placeholder="0">
+    	                						    <input type="hidden" class="form-control inputtext input150" name="totemipri" id="totemipri" placeholder="0">
+    	                						    <input type="text" class="form-control inputtext input150" name="tottrasnporte" id="tottrasnporte" placeholder="0">
+
+    	                						</div>
+                    					    </div>
+                    					 </div>
+			                    
+			                        <ul class="list-inline pull-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+			                            <li><button type="button" class="btnes next-step">Siguiente</button></li>
+			                        </ul>
+			                    </div><!-- fin tab -->
+			                   
+			                    <div class="tab-pane" role="tabpanel" id="step4">
+			                        <h3>Comida</h3>
+   				                    <font style="vertical-align: inherit;">
+   			                        En el último año, ¿cuántos vuelos ha realizado?</font>
+                   					 <div class="row mtop">
+                   					   <div class="col-xs-12 form-group">
+                           					<div class="col-xs-12 form-group">
+   	                						    <label for="vnacional">Nacional</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaVuelo" name="vnacional"  id="vnacional" placeholder="0">
+                   						    </div>
+                   						</div>
+                   						<div class="col-xs-6 form-group">
+                   							<div class="col-xs-12 form-group">
+   	                						    <label for="vue">Reino Unido</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaVuelo" name="vue" id="vue" placeholder="0">
+   	                						</div>
+                   					    </div>
+                   					    <div class="col-xs-6 form-group">
+                           					<div class="col-xs-12 form-group">
+   	                						    <label for="vusa">EEUU</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaVuelo" name="vusa"  id="vusa" placeholder="0">
+                   						    </div>
+                   						</div>
+                   						<div class="col-xs-6 form-group">
+                   							<div class="col-xs-12 form-group">
+   	                						    <label for="vasia">Asia</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaVuelo" name="vasia" id="vasia" placeholder="0">
+       	                						
+   	                						</div>
+                   					    </div>
+                   					    <div class="col-xs-6 form-group">
+                           					<div class="col-xs-12 form-group">
+   	                						    <label for="vsura">Sur America</label>
+   	                						    <input type="number" min="0" class="form-control inputtext input150 calculaVuelo" name="vsura"  id="vsura" placeholder="0">
+   	                						    <input type="text" class="form-control inputtext input150" name="totvuelos" id="totvuelos" placeholder="0">
+                   						    </div>
+                   						</div>
+   		                        	</div>
+			                        <ul class="list-inline pull-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+			                            <li><button type="button" class="btnes next-step">Siguiente</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane" role="tabpanel" id="complete">
+			                        <h3>Complete</h3>
+			                        <p>You have successfully completed all steps.</p>
+			                        <ul class="list-inline pull-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+			                            <li><button type="button" class="btnes next-step">Finalizar</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="clearfix"></div>
+			                </div>
+			            </form>
+			        </div>
+			    </section>
+			   </div>
+			</div>
+		</div> 
+		<script>
+		    $(document).ready(function() {
+		      $('input').attr('autocomplete', 'off');
+                 //Initialize tooltips
+                 $('.nav-tabs > li a[title]').tooltip();
+                 
+                 //Wizard
+                 $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+                     var $target = $(e.target);
+                 
+                     if ($target.parent().hasClass('disabled')) {
+                         return false;
+                     }
+                 });
+
+                 $(".next-step").click(function (e) {
+
+                     var $active = $('.wizard .nav-tabs li.active');
+                     $active.next().removeClass('disabled');
+                     nextTab($active);
+
+                 });
+                 $(".prev-step").click(function (e) {
+
+                     var $active = $('.wizard .nav-tabs li.active');
+                     prevTab($active);
+
+                 });
+
+                 $(document).on('click', '.go_slide', function(){
+                     var godiv = $(this).data('godiv');
+                     var origendiv = $(this).data('origendiv');
+                     console.log('entro'+godiv)
+                     // $(origendiv).hide("slide", { direction: "left" }, 500);
+                     // $(godiv).show("slide", { direction: "righ" }, 500);
+                     $(godiv).removeClass('hide');
+                     $(origendiv).addClass('hide');
+                     return false;
+                 });
+                 $(document).on('click', '.back_slide', function(){
+                     var godiv = $(this).data('godiv');
+                     var origendiv = $(this).data('origendiv');
+                     /*$(origendiv).hide("slide", { direction: "right" }, 500);
+                     $(godiv).show("slide", { direction: "left" }, 500);*/
+                     $(godiv).addClass('active in');
+                     $(origendiv).removeClass('active in');
+                     setTimeout(function(){ $('#tab_action').html(''); },200); 
+                     return false;
+                 });
+
+                
+             });
+
+             function nextTab(elem) {
+                 $(elem).next().find('a[data-toggle="tab"]').click();
+             }
+             function prevTab(elem) {
+                 $(elem).prev().find('a[data-toggle="tab"]').click();
+             }
+
+             var fetp=parseFloat(0.000081192);
+             var fetpar=parseFloat(0.002202125);
+             var fenergia=parseFloat(0.13);
+             var fecarne=parseFloat(0.00986301369863013);
+             var fecerdo=parseFloat(0.0046027397260274);
+             var fepollo=parseFloat(0.00197260273972603);
+             var feveg=parseFloat(0.000657534246575342);
+             var fenal=parseFloat(0.421911);
+             var feue=parseFloat(5.42457);
+             var feusa=parseFloat(2.591739);
+             var feasia=parseFloat(8.43822);
+             var fesura=parseFloat(1.80819);
+
+
+
+             var fcore=1/60;
+             var fcorrener=12/1000;
+             var fcorrcom=parseFloat(52)	;
+             var segcomida=1;
+             $(document).on('change', '.calculaT', function(e){
+	             var tpub=parseFloat($('#ttrayectopu').val())*parseFloat($('#nviajespu').val())*52;
+	             $('#totminvpub').val(tpub);
+	             var ia=tpub/1;
+	             var etco=fetp*tpub*fcore;
+	             $('#totemipub').val(etco);
+	             $('#tottrasnporte').val(etco.toFixed(3));
+              });
+
+              $(document).on('change', '.calculaTpr', function(e){
+ 	             var tpri=parseFloat($('#ttrayectopri').val())*parseFloat($('#nviajespri').val())*52;
+ 	             $('#totminvpri').val(tpri);
+ 	             var datoent=tpri/$('#nper').val();
+ 	             console.log(datoent);
+ 	             var ia=tpri/$('#nper').val();
+ 	             var etco=fetpar*datoent*fcore;
+ 	             $('#totemipri').val(etco);
+ 	             var totpub = $('#totemipub').val();
+ 	             if(!isNaN(etco)){
+ 	             	var sumtras=parseFloat(totpub)+parseFloat(etco)
+ 	             	$('#tottrasnporte').val(sumtras.toFixed(3));
+ 	             }
+               });
+               $(document).on('change', '.calculaE', function(e){
+  	             var tener=(parseFloat($('#conenergia').val())/parseFloat($('#npercasa').val()))+55;
+  	             console.log(tener)
+  	             var ianergia=tener/$('#npercasa').val();
+  	             console.log(ianergia)
+
+  	             var etcEner=fenergia*tener*fcorrener;
+  	             console.log(etcEner)
+
+  	             	$('#totenergia').val(etcEner.toFixed(3));
+                });
+               $(document).on('change', '.calculaCo', function(e){
+  	             var tcarne=(parseFloat($('#carne').val())*parseFloat(fecarne))*fcorrcom;
+  	             var tcerdo=(parseFloat($('#cerdo').val())*parseFloat(fecerdo))*fcorrcom;
+  	             var tpollo=(parseFloat($('#pollo').val())*parseFloat(fepollo))*fcorrcom;
+  	             var tveg=(parseFloat($('#vegetales').val())*parseFloat(feveg))*fcorrcom;  	             
+  	             var totcom=tcarne+tcerdo+tpollo+tveg;
+  	             $('#totcomida').val(totcom.toFixed(3));
+                });
+               $(document).on('change', '.calculaVuelo', function(e){
+  	             var tnal=(parseFloat($('#vnacional').val())*parseFloat(fenal))*segcomida;
+  	             var tusa=(parseFloat($('#vusa').val())*parseFloat(feusa))*segcomida;
+  	             var tasia=(parseFloat($('#vasia').val())*parseFloat(feasia))*segcomida;
+  	             var tvue=(parseFloat($('#vue').val())*parseFloat(feue))*segcomida;  	             
+  	             var tsura=(parseFloat($('#vsura').val())*parseFloat(fesura))*segcomida;  	             
+  	             var totvuelo=tnal+tusa+tasia+tvue+tsura;
+  	             $('#totvuelos').val(totvuelo.toFixed(3));
+                });
+		  </script>
+	</body>
+</html>
